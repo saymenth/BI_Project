@@ -1,0 +1,7 @@
+shipping_status_id,shipping_status_name
+1,packing
+2,delivering
+3,delivered
+4,pending
+5,missing
+6,in-transit

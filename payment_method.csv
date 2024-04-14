@@ -1,0 +1,8 @@
+payment_method_id,payment_method_type,payment_method_name,paymen_method_account_number,payment_method_fee
+1,cash,tunai,,0
+2,debit_card,visa_debit,,0
+3,debit_card,mastercard_debit,,0
+4,virtual_account,va_mandiri,9999121201,2500
+5,virtual_account,va_bca,9999121202,2500
+6,bank_transfer,bt_mandiri,8888121201,6500
+7,bank_transfer,bt_bca,8888121202,6500

@@ -1,0 +1,101 @@
+user_id,user_first_name,user_last_name,user_phone,user_address,user_city,user_province,user_email,user_username,user_password
+1,saymen,saymen,6.29E+11,Jalan Mangga 23,Bandung,Jawa Barat,michaelj@binus.ac.id,id_michaelj,123michael
+2,decade,decade,6.29E+11,Jalan Jeruk 15,Surabaya,Jawa Timur,decaded@binus.ac.id,id_decaded,123decade
+3,agito,agito,6.29E+11,Jalan Apel 7,Bandung,Jawa Barat,agitoa@binus.ac.id,id_agitoa,123agito
+4,kuuga,kuuga,6.29E+11,Jalan Anggur 42,Yogyakarta,Daerah Istimewa Yogyakarta,kuugak@binus.ac.id,id_kuugak,123kuuga
+5,allen,iverson,6.29E+11,Jalan Kelapa 11,Medan,Sumatera Utara,alleni@binus.ac.id,id_alleni,123allen
+6,julis,erving,6.29E+11,Jalan Durian 5,Palembang,Sumatera Selatan,julise@binus.ac.id,id_julise,123julis
+7,charles,barkley,6.29E+11,Jalan Ayam 29,Semarang,Jawa Tengah,charlesb@binus.ac.id,id_charlesb,123charles
+8,kareem,abduljabbar,6.29E+11,Jalan Kucing 36,Makassar,Sulawesi Selatan,kareema@binus.ac.id,id_kareema,123kareem
+9,john,doe,6.29E+11,Jalan Nanas 18,Malang,Jawa Timur,johnd@binus.ac.id,id_johnd,123john
+10,william,bruce,6.29E+11,Jalan Belimbing 20,Denpasar,Bali,williamb@binus.ac.id,id_williamb,123william
+11,steve,bruce,6.29E+11,Jalan Pisang 3,Jakarta,DKI Jakarta,steveb@binus.ac.id,id_steveb,123steve
+12,alan,shearer,6.29E+11,Jalan Kambing 45,Surabaya,Jawa Timur,alans@binus.ac.id,id_alans,123alan
+13,peter,beardsley,6.29E+11,Jalan Stroberi 8,Bandung,Jawa Barat,peterb@binus.ac.id,id_peterb,123peter
+14,thibaut,courtois,6.29E+11,Jalan Angsa 12,Yogyakarta,Daerah Istimewa Yogyakarta,thibautc@binus.ac.id,id_thibautc,123thibaut
+15,erling,haaland,6.29E+11,Jalan Jeruk 33,Medan,Sumatera Utara,erlingh@binus.ac.id,id_erlingh,123erling
+16,callum,wilson,6.29E+11,Jalan Apel 14,Palembang,Sumatera Selatan,callumw@binus.ac.id,id_callumw,123callum
+17,javier,zanetti,6.29E+11,Jalan Mangga 22,Semarang,Jawa Tengah,javierz@binus.ac.id,id_javierz,123javier
+18,christian,vieri,6.29E+11,Jalan Kelinci 9,Makassar,Sulawesi Selatan,christianv@binus.ac.id,id_christianv,123christian
+19,eden,hazard,6.29E+11,Jalan Salak 17,Malang,Jawa Timur,edenh@binus.ac.id,id_edenh,123eden
+20,juan,mata,6.29E+11,Jalan Kuda 26,Denpasar,Bali,juanm@binus.ac.id,id_juanm,123juan
+21,dennis,wise,6.29E+11,Jalan Durian 4,Jakarta,DKI Jakarta,dennisw@binus.ac.id,id_dennisw,123dennis
+22,willian,silva,6.29E+11,Jalan Kelapa 5,Surabaya,Jawa Timur,willians@binus.ac.id,id_willians,123willian
+23,bruno,fernandes,6.29E+11,Jalan Jeruk 31,Bandung,Jawa Barat,brunof@binus.ac.id,id_brunof,123bruno
+24,luke,shaw,6.29E+11,Jalan Nanas 48,Yogyakarta,Daerah Istimewa Yogyakarta,lukes@binus.ac.id,id_lukes,123luke
+25,harry,maguire,6.29E+11,Jalan Anggur 10,Medan,Sumatera Utara,harrym@binus.ac.id,id_harrym,123harry
+26,robert,deniro,6.29E+11,Jalan Kucing 19,Palembang,Sumatera Selatan,robertd@binus.ac.id,id_robertd,123robert
+27,al,pacino,6.29E+11,Jalan Pisang 27,Semarang,Jawa Tengah,alp@binus.ac.id,id_alp,123al
+28,marlon,brando,6.29E+11,Jalan Ayam 13,Makassar,Sulawesi Selatan,marlonb@binus.ac.id,id_marlonb,123marlon
+29,diane,keaton,6.29E+11,Jalan Belimbing 6,Malang,Jawa Timur,dianek@binus.ac.id,id_dianek,123diane
+30,john,cazale,6.29E+11,Jalan Stroberi 37,Denpasar,Bali,johnc@binus.ac.id,id_johnc,123john
+31,joe,pesci,6.29E+11,Jalan Jeruk 2,Jakarta,DKI Jakarta,joep@binus.ac.id,id_joep,123joe
+32,christian,bale,6.29E+11,Jalan Mangga 41,Surabaya,Jawa Timur,christianb@binus.ac.id,id_christianb,123christian
+33,cillian,murphy,6.29E+11,Jalan Kambing 25,Bandung,Jawa Barat,cillianm@binus.ac.id,id_cillianm,123cillian
+34,katie,holmes,6.29E+11,Jalan Apel 16,Yogyakarta,Daerah Istimewa Yogyakarta,katieh@binus.ac.id,id_katieh,123katie
+35,michael,caine,6.29E+11,Jalan Durian 30,Medan,Sumatera Utara,michaelc@binus.ac.id,id_michaelc,123michael
+36,liam,neeson,6.29E+11,Jalan Kelinci 44,Palembang,Sumatera Selatan,liamn@binus.ac.id,id_liamn,123liam
+37,gary,oldman,6.29E+11,Jalan Salak 28,Semarang,Jawa Tengah,garyo@binus.ac.id,id_garyo,123gary
+38,morgan,freeman,6.29E+11,Jalan Nanas 49,Makassar,Sulawesi Selatan,morganf@binus.ac.id,id_morganf,123morgan
+39,jim,carrey,6.29E+11,Jalan Kuda 23,Malang,Jawa Timur,jimc@binus.ac.id,id_jimc,123jim
+40,kate,winslet,6.29E+11,Jalan Angsa 11,Denpasar,Bali,katew@binus.ac.id,id_katew,123kate
+41,kirsten,dunst,6.29E+11,Jalan Kelapa 39,Jakarta,DKI Jakarta,kirstend@binus.ac.id,id_kirstend,123kirsten
+42,elijah,wood,6.29E+11,Jalan Jeruk 4,Surabaya,Jawa Timur,elijahw@binus.ac.id,id_elijahw,123elijah
+43,mark,ruffalo,6.29E+11,Jalan Mangga 29,Bandung,Jawa Barat,markr@binus.ac.id,id_markr,123mark
+44,jennifer,garner,6.29E+11,Jalan Ayam 7,Yogyakarta,Daerah Istimewa Yogyakarta,jenniferg@binus.ac.id,id_jenniferg,123jennifer
+45,owen,wilson,6.29E+11,Jalan Kucing 35,Medan,Sumatera Utara,owenw@binus.ac.id,id_owenw,123owen
+46,bill,murray,6.29E+11,Jalan Stroberi 21,Palembang,Sumatera Selatan,billm@binus.ac.id,id_billm,123bill
+47,ben,stiller,6.29E+11,Jalan Apel 1,Semarang,Jawa Tengah,bens@binus.ac.id,id_bens,123ben
+48,gene,hackman,6.29E+11,Jalan Belimbing 47,Makassar,Sulawesi Selatan,geneh@binus.ac.id,id_geneh,123gene
+49,gwyneth,platrow,6.29E+11,Jalan Durian 38,Malang,Jawa Timur,gwynethp@binus.ac.id,id_gwynethp,123gwyneth
+50,alec,baldwin,6.29E+11,Jalan Nanas 12,Denpasar,Bali,alecb@binus.ac.id,id_alecb,123alec
+51,orlando,bloom,6.29E+11,Jalan Jeruk 8,Jakarta,DKI Jakarta,orlandob@binus.ac.id,id_orlandob,123orlando
+52,cate,blanchett,6.29E+11,Jalan Mangga 14,Surabaya,Jawa Timur,cateb@binus.ac.id,id_cateb,123cate
+53,ian,mckellen,6.29E+11,Jalan Kelinci 22,Bandung,Jawa Barat,ianm@binus.ac.id,id_ianm,123ian
+54,viggo,mortensen,6.29E+11,Jalan Pisang 19,Yogyakarta,Daerah Istimewa Yogyakarta,viggom@binus.ac.id,id_viggom,123viggo
+55,martin,freeman,6.29E+11,Jalan Ayam 46,Medan,Sumatera Utara,martinf@binus.ac.id,id_martinf,123martin
+56,benedict,cumberbatch,6.29E+11,Jalan Kuda 9,Palembang,Sumatera Selatan,benedictc@binus.ac.id,id_benedictc,123benedict
+57,hugh,jackman,6.29E+11,Jalan Salak 33,Semarang,Jawa Tengah,hughj@binus.ac.id,id_hughj,123hugh
+58,patrick,stewart,6.29E+11,Jalan Anggur 27,Makassar,Sulawesi Selatan,patricks@binus.ac.id,id_patricks,123patrick
+59,stan,lee,6.29E+11,Jalan Stroberi 5,Malang,Jawa Timur,stanl@binus.ac.id,id_stanl,123stan
+60,nicholas,hoult,6.29E+11,Jalan Kucing 41,Denpasar,Bali,nicholash@binus.ac.id,id_nicholash,123nicholas
+61,emilia,clarke,6.29E+11,Jalan Mangga 43,Jakarta,DKI Jakarta,emiliac@binus.ac.id,id_emiliac,123emilia
+62,sophia,turner,6.29E+11,Jalan Jeruk 36,Surabaya,Jawa Timur,sophiat@binus.ac.id,id_sophiat,123sophia
+63,maisie,williams,6.29E+11,Jalan Apel 15,Bandung,Jawa Barat,maisiew@binus.ac.id,id_maisiew,123maisie
+64,kit,harington,6.29E+11,Jalan Kelinci 24,Yogyakarta,Daerah Istimewa Yogyakarta,kith@binus.ac.id,id_kith,123kit
+65,lena,headey,6.29E+11,Jalan Durian 28,Medan,Sumatera Utara,lenah@binus.ac.id,id_lenah,123lena
+66,natalie,dormer,6.29E+11,Jalan Kambing 16,Palembang,Sumatera Selatan,natalied@binus.ac.id,id_natalied,123natalie
+67,jason,momoa,6.29E+11,Jalan Nanas 20,Semarang,Jawa Tengah,jasonm@binus.ac.id,id_jasonm,123jason
+68,rose,leslie,6.29E+11,Jalan Ayam 2,Makassar,Sulawesi Selatan,rosel@binus.ac.id,id_rosel,123rose
+69,alfie,allen,6.29E+11,Jalan Salak 37,Malang,Jawa Timur,alfiea@binus.ac.id,id_alfiea,123alfie
+70,iain,glen,6.29E+11,Jalan Pisang 32,Denpasar,Bali,iaing@binus.ac.id,id_iaing,123iain
+71,james,mcavoy,6.29E+11,Jalan Jeruk 50,Jakarta,DKI Jakarta,jamesm@binus.ac.id,id_jamesm,123james
+72,zack,fair,6.29E+11,Jalan Mangga 18,Surabaya,Jawa Timur,zackf@binus.ac.id,id_zackf,123zack
+73,caith,sith,6.29E+11,Jalan Kelapa 26,Bandung,Jawa Barat,caiths@binus.ac.id,id_caiths,123caith
+74,cloud,strife,6.29E+11,Jalan Apel 47,Yogyakarta,Daerah Istimewa Yogyakarta,clouds@binus.ac.id,id_clouds,123cloud
+75,vincent,valentine,6.29E+11,Jalan Durian 10,Medan,Sumatera Utara,vincentv@binus.ac.id,id_vincentv,123vincent
+76,cid,highwind,6.29E+11,Jalan Kucing 3,Palembang,Sumatera Selatan,cidh@binus.ac.id,id_cidh,123cid
+77,tifa,lockhart,6.29E+11,Jalan Stroberi 39,Semarang,Jawa Tengah,tifal@binus.ac.id,id_tifal,123tifa
+78,yuffie,kisaragi,6.29E+11,Jalan Anggur 21,Makassar,Sulawesi Selatan,yuffiek@binus.ac.id,id_yuffiek,123yuffie
+79,squall,leonhart,6.29E+11,Jalan Kuda 12,Malang,Jawa Timur,squalll@binus.ac.id,id_squalll,123squall
+80,rinoa,heartilly,6.29E+11,Jalan Nanas 44,Denpasar,Bali,rinoah@binus.ac.id,id_rinoah,123rinoa
+81,quistis,trepe,6.29E+11,Jalan Jeruk 6,Jakarta,DKI Jakarta,quistist@binus.ac.id,id_quistist,123quistis
+82,zidane,tribal,6.29E+11,Jalan Mangga 30,Surabaya,Jawa Timur,zidanet@binus.ac.id,id_zidanet,123zidane
+83,vivi,ornitier,6.29E+11,Jalan Pisang 17,Bandung,Jawa Barat,vivio@binus.ac.id,id_vivio,123vivi
+84,adelbert,steiner,6.29E+11,Jalan Ayam 22,Yogyakarta,Daerah Istimewa Yogyakarta,adelberts@binus.ac.id,id_adelberts,123adelbert
+85,quina,quen,6.29E+11,Jalan Kuda 41,Medan,Sumatera Utara,quinaq@binus.ac.id,id_quinaq,123quina
+86,tomoya,nagase,6.29E+11,Jalan Salak 8,Palembang,Sumatera Selatan,tomoyan@binus.ac.id,id_tomoyan,123tomoya
+87,chiaki,sato,6.29E+11,Jalan Kelinci 14,Semarang,Jawa Tengah,chiakis@binus.ac.id,id_chiakis,123chiaki
+88,aragaki,yui,6.29E+11,Jalan Durian 23,Makassar,Sulawesi Selatan,aragakiy@binus.ac.id,id_aragakiy,123aragaki
+89,haruma,miura,6.29E+11,Jalan Kambing 27,Malang,Jawa Timur,harumam@binus.ac.id,id_harumam,123haruma
+90,mikako,tabe,6.29E+11,Jalan Apel 13,Denpasar,Bali,mikakot@binus.ac.id,id_mikakot,123mikako
+91,kiko,mizuhara,6.29E+11,Jalan Jeruk 19,Jakarta,DKI Jakarta,kikom@binus.ac.id,id_kikom,123kiko
+92,yui,yoshioka,6.29E+11,Jalan Mangga 38,Surabaya,Jawa Timur,yuiy@binus.ac.id,id_yuiy,123yui
+93,shinji,kido,6.29E+11,Jalan Kelapa 1,Bandung,Jawa Barat,shinjik@binus.ac.id,id_shinjik,123shinji
+94,hitoshi,hidaka,6.29E+11,Jalan Kucing 50,Yogyakarta,Daerah Istimewa Yogyakarta,hitoshih@binus.ac.id,id_hitoshih,123hitoshi
+95,soji,tendo,6.29E+11,Jalan Pisang 26,Medan,Sumatera Utara,sojit@binus.ac.id,id_sojit,123soji
+96,ryotaro,nogami,6.29E+11,Jalan Ayam 32,Palembang,Sumatera Selatan,ryotaron@binus.ac.id,id_ryotaron,123ryotaro
+97,tsukasa,kadoya,6.29E+11,Jalan Stroberi 9,Semarang,Jawa Tengah,tsukasak@binus.ac.id,id_tsukasak,123tsukasa
+98,faiz,halim,6.29E+11,Jalan Anggur 16,Makassar,Sulawesi Selatan,faizh@binus.ac.id,id_faizh,123faiz
+99,fourze,gaia,6.29E+11,Jalan Nanas 7,Malang,Jawa Timur,fourzeg@binus.ac.id,id_fourzeg,123fourze
+100,rikako,sakata,6.29E+11,Jalan Durian 11,Denpasar,Bali,rikakos@binus.ac.id,id_rikakos,123rikako
