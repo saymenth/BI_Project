@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <transformation>
   <info>
-    <name>etl_3</name>
+    <name>dim_shipping_method</name>
     <description/>
     <extended_description/>
     <trans_version/>
@@ -427,23 +427,86 @@
     <clusterschemas>
     </clusterschemas>
     <created_user>-</created_user>
-    <created_date>2024/04/04 19:29:03.453</created_date>
+    <created_date>2024/05/02 20:15:39.015</created_date>
     <modified_user>-</modified_user>
-    <modified_date>2024/04/04 19:29:03.453</modified_date>
-    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <modified_date>2024/05/02 20:15:39.015</modified_date>
+    <key_for_session_key/>
     <is_key_private>N</is_key_private>
   </info>
   <notepads>
   </notepads>
   <connection>
-    <name>transform_dim_payment_method</name>
+    <name>DBtokopaedi</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>tokopaedi</database>
+    <database>DBtokopaedi</database>
     <port>3306</port>
-    <username>tiket</username>
-    <password>Encrypted 2be98afc86aa7f2e4bf10a575cac3fd89</password>
+    <username>tokopaediEnrico</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.defaultFetchSize</code>
+        <attribute>500</attribute>
+      </attribute>
+      <attribute>
+        <code>EXTRA_OPTION_MYSQL.useCursorFetch</code>
+        <attribute>true</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>DWtokopaedi</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>DWtokopaedi</database>
+    <port>3306</port>
+    <username>enricoTokopaedi</username>
+    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -500,14 +563,19 @@
   </connection>
   <order>
     <hop>
-      <from>CSV Payment Method</from>
-      <to>Dimension lookup/update</to>
+      <from>Select values 2</from>
+      <to>Insert / update</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Table input</from>
+      <to>Select values 2</to>
       <enabled>Y</enabled>
     </hop>
   </order>
   <step>
-    <name>CSV Payment Method</name>
-    <type>CsvInput</type>
+    <name>Insert / update</name>
+    <type>InsertUpdate</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -516,77 +584,29 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>${Internal.Entry.Current.Directory}/payment_method.csv</filename>
-    <filename_field/>
-    <rownum_field/>
-    <include_filename>N</include_filename>
-    <separator>,</separator>
-    <enclosure>"</enclosure>
-    <header>Y</header>
-    <buffer_size>50000</buffer_size>
-    <lazy_conversion>Y</lazy_conversion>
-    <add_filename_result>N</add_filename_result>
-    <parallel>N</parallel>
-    <newline_possible>N</newline_possible>
-    <format>mixed</format>
-    <encoding/>
-    <fields>
-      <field>
-        <name>payment_method_id</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>IDR</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>payment_method_type</name>
-        <type>String</type>
-        <format/>
-        <currency>IDR</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>payment_method_name</name>
-        <type>String</type>
-        <format/>
-        <currency>IDR</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>16</length>
-        <precision>-1</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>paymen_method_account_number</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>IDR</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-      <field>
-        <name>payment_method_fee</name>
-        <type>Integer</type>
-        <format>#</format>
-        <currency>IDR</currency>
-        <decimal>.</decimal>
-        <group>,</group>
-        <length>15</length>
-        <precision>0</precision>
-        <trim_type>none</trim_type>
-      </field>
-    </fields>
+    <connection>DWtokopaedi</connection>
+    <commit>100</commit>
+    <update_bypassed>N</update_bypassed>
+    <lookup>
+      <schema/>
+      <table>dim_shipping_method</table>
+      <key>
+        <name>shipping_method_id</name>
+        <field>shipping_method_id</field>
+        <condition/>
+        <name2/>
+      </key>
+      <value>
+        <name>shipping_method_id</name>
+        <rename>shipping_method_id</rename>
+        <update>Y</update>
+      </value>
+      <value>
+        <name>shipping_method_name</name>
+        <rename>shipping_method_name</rename>
+        <update>Y</update>
+      </value>
+    </lookup>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -596,14 +616,14 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>432</xloc>
-      <yloc>224</yloc>
+      <xloc>726</xloc>
+      <yloc>235</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
   <step>
-    <name>Dimension lookup/update</name>
-    <type>DimensionLookup</type>
+    <name>Select values 2</name>
+    <type>SelectValues</type>
     <description/>
     <distribute>Y</distribute>
     <custom_distribution/>
@@ -612,58 +632,17 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <schema/>
-    <table>dim_payment_method</table>
-    <connection>transform_dim_payment_method</connection>
-    <commit>100</commit>
-    <update>Y</update>
     <fields>
-      <key>
-        <name>payment_method_id</name>
-        <lookup>payment_method_id</lookup>
-      </key>
-      <date>
-        <name/>
-        <from>date_from</from>
-        <to>date_to</to>
-      </date>
       <field>
-        <name>payment_method_type</name>
-        <lookup>payment_method_type</lookup>
-        <update>Update</update>
-      </field>
-      <field>
-        <name>payment_method_name</name>
-        <lookup>payment_method_name</lookup>
-        <update>Update</update>
-      </field>
-      <field>
-        <name>paymen_method_account_number</name>
-        <lookup>paymen_method_account_number</lookup>
-        <update>Update</update>
-      </field>
-      <field>
-        <name>payment_method_fee</name>
-        <lookup>payment_method_fee</lookup>
-        <update>Update</update>
-      </field>
-      <return>
-        <name>dim_payment_method_id</name>
+        <name>shipping_method_id</name>
         <rename/>
-        <creation_method>tablemax</creation_method>
-        <use_autoinc>N</use_autoinc>
-        <version>version</version>
-      </return>
+      </field>
+      <field>
+        <name>shipping_method_name</name>
+        <rename/>
+      </field>
+      <select_unspecified>N</select_unspecified>
     </fields>
-    <sequence/>
-    <min_year>1900</min_year>
-    <max_year>2199</max_year>
-    <cache_size>-1</cache_size>
-    <preload_cache>N</preload_cache>
-    <use_start_date_alternative>N</use_start_date_alternative>
-    <start_date_alternative>none</start_date_alternative>
-    <start_date_field_name/>
-    <useBatch>N</useBatch>
     <attributes/>
     <cluster_schema/>
     <remotesteps>
@@ -673,7 +652,91 @@
       </output>
     </remotesteps>
     <GUI>
-      <xloc>704</xloc>
+      <xloc>544</xloc>
+      <yloc>240</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>DBtokopaedi</connection>
+    <sql>SELECT 
+shipping_method_id,
+ shipping_method_name
+FROM shipping_method</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>Integer</type>
+        <storagetype>normal</storagetype>
+        <name>shipping_method_id</name>
+        <length>9</length>
+        <precision>0</precision>
+        <origin>Table input</origin>
+        <comments>shipping_method_id</comments>
+        <conversion_Mask>####0;-####0</conversion_Mask>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Jakarta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>shipping_method_name</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>Table input</origin>
+        <comments>shipping_method_name</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>en_ID</date_format_locale>
+        <date_format_timezone>Asia/Jakarta</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>352</xloc>
       <yloc>224</yloc>
       <draw>Y</draw>
     </GUI>
