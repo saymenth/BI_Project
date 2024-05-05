@@ -442,8 +442,8 @@
     <access>Native</access>
     <database>tokopaedi</database>
     <port>3306</port>
-    <username>saymen1</username>
-    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <username>tiket</username>
+    <password>Encrypted 2be98afc86aa7f2e4bf10a575cac3fd89</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -516,7 +516,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\Users\saymen\Downloads\data_dummy_2024\products.csv</filename>
+    <filename>${Internal.Entry.Current.Directory}/products.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
