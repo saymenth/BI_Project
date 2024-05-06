@@ -436,14 +436,14 @@
   <notepads>
   </notepads>
   <connection>
-    <name>DBtokopaedi</name>
+    <name>dw_eac_1</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>tokopaedi</database>
+    <database>dw_eac_1</database>
     <port>3306</port>
-    <username>saymen1</username>
-    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -499,14 +499,14 @@
     </attributes>
   </connection>
   <connection>
-    <name>dim_shipping</name>
+    <name>eac_1</name>
     <server>localhost</server>
     <type>MYSQL</type>
     <access>Native</access>
-    <database>tokopaedi</database>
+    <database>eac_1</database>
     <port>3306</port>
-    <username>saymen1</username>
-    <password>Encrypted 2be98afc86aa7f2e4bb18bd63c99dbdde</password>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ff228dc6fa8c</password>
     <servername/>
     <data_tablespace/>
     <index_tablespace/>
@@ -584,11 +584,11 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>dim_shipping</connection>
+    <connection>dw_eac_1</connection>
     <commit>100</commit>
     <update_bypassed>N</update_bypassed>
     <lookup>
-      <schema>dwtokopaedi</schema>
+      <schema/>
       <table>dim_shipping_method</table>
       <key>
         <name>shipping_method_id</name>
@@ -666,7 +666,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>DBtokopaedi</connection>
+    <connection>eac_1</connection>
     <sql>SELECT 
 shipping_method_id,
  shipping_method_name
